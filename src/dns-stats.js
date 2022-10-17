@@ -31,19 +31,19 @@ module.exports = {
     getDNSStats
 };
 
-function getDNSStats(arr) {
-    let a = [...arr]
-    let arrey = []
-    a.forEach(element => {
-        arrey.push(element.split('.'));
-    });
-    arrey.flat()
-    let i = 1
-    let b
-    let ob = {}
-    ob.b = true;
-    console.log(a);
-    console.log(arrey.flat());
+// function getDNSStats(arr) {
+//     let a = [...arr]
+//     let arrey = []
+//     a.forEach(element => {
+//         arrey.push(element.split('.'));
+//     });
+//     arrey.flat()
+//     let i = 1
+//     let b
+//     let ob = {}
+//     ob.b = true;
+//     console.log(a);
+//     console.log(arrey.flat());
 
-}
-хз asd
+// }
+// хз asd

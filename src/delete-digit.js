@@ -20,10 +20,10 @@ module.exports = {
     deleteDigit
 };
 
-function deleteDigit(n) {
-    let arr = String(n).split('')
-    let min = String(Math.min(...arr))
-    let i = arr.indexOf(min)
-    arr.splice(i, 1)
-    return +(arr.join(''))
-}
+// function deleteDigit(n) {
+//     let arr = String(n).split('')
+//     let min = String(Math.min(...arr))
+//     let i = arr.indexOf(min)
+//     arr.splice(i, 1)
+//     return +(arr.join(''))
+// }
