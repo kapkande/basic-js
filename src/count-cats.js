@@ -19,16 +19,29 @@ function countCats( /* matrix */ ) {
     // remove line with error and write your code here
 }
 
+
 module.exports = {
     countCats
 };
-let colvo
+
+let colvo = 0
 
 function countCats(params) {
+    colvo = 0
     params.forEach(element => {
-        element.forEach(element => {
+        if (typeof(element) == 'object') {
+            countCats1(element)
+        } else {
             if (element == "^^") { colvo += 1 }
-        });
+        }
     });
+    console.log(colvo);
     return colvo
+
+}
+
+function countCats1(element) {
+    element.forEach(element => {
+        if (element == "^^") { colvo += 1 }
+    })
 }
